@@ -69,7 +69,19 @@ public class ListaComArray {
                 elements= newElements;
             }
         }
-        }
+    }
+
+    public void add(int index,Object elem){
+        aumentarCacidadeSeNecessario();
+            if(elements[index]<0 && elements < size() - 1){
+                elements[index]= elem;
+        }else{
+                for(int i=index;i<size;i++){
+                    elements[i]=elements[i+1];
+                }
+                elements[index]=elem;
+            }
+    }
 }
 
 

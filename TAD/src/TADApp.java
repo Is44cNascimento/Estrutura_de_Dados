@@ -1,7 +1,9 @@
 
 public class TADApp {
 
-	public static void main(String[] args) {
+    public static void main(String[] args) {
+
+
 
         ListaComArray minhaLista = new ListaComArray();
 
@@ -23,6 +25,7 @@ public class TADApp {
         minhaLista.add(new Aluno("Pedro"));
         minhaLista.add(new Aluno("Judas"));
 
+        minhaLista.print();
 
 		
 /*
