@@ -48,6 +48,16 @@ public class ListaComArray {
                     return -1;
                 }
         }
+
+        public void aumentarCacidadeSeNecessario(){
+        if(size==capacity){
+            Object[] newElements = new Object[capacity*2];
+            for(int i=0;i<size;i++){
+                newElements[i]=elements[i];
+                elements= newElements;
+            }
+        }
+        }
 }
 
 
