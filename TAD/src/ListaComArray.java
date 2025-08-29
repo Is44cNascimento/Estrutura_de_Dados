@@ -44,8 +44,11 @@ public class ListaComArray {
     }
 
 
-    public void add(Object element ){
-        
+    public void add(Object elem ){
+        aumentarCacidadeSeNecessario();
+        elements[size]=elem;
+        size++;
+        return true;
     }
 
         public int indexOf(Object element){
