@@ -13,9 +13,17 @@ public class TADApp {
 		IntBox minhaOutraCaixa=new IntBox(10);     
 		System.out.println("O número guardado na caixa é "+minhaOutraCaixa.meDeONumero());
 		minhaOutraCaixa.guardeEsteNumero(12);    
-		System.out.println("O número guardado na caixa é "+minhaOutraCaixa.meDeONumero());  
+		System.out.println("O número guardado na caixa é "+minhaOutraCaixa.meDeONumero());
 
-		minhaLista.add();
+
+        minhaLista.add(new Aluno("Jesus"));
+        minhaLista.add(new Aluno("José"));
+        minhaLista.add(new Aluno("Maria"));
+        minhaLista.add(new Aluno("João"));
+        minhaLista.add(new Aluno("Pedro"));
+        minhaLista.add(new Aluno("Judas"));
+
+
 		
 /*
 		
@@ -43,12 +51,7 @@ public class TADApp {
 	    	System.out.println("Um dos alunos guardado na multicaixa é "+minhaMultiCaixaAluno.meDeUmAluno());
 
 	    // colocando alguns alunos na caixa
-	    minhaMultiCaixaAluno.guardeEsteAluno(new Aluno("Jesus"));
-	    minhaMultiCaixaAluno.guardeEsteAluno(new Aluno("José"));
-	    minhaMultiCaixaAluno.guardeEsteAluno(new Aluno("Maria"));
-	    minhaMultiCaixaAluno.guardeEsteAluno(new Aluno("João"));
-	    minhaMultiCaixaAluno.guardeEsteAluno(new Aluno("Pedro"));
-	    minhaMultiCaixaAluno.guardeEsteAluno(new Aluno("Judas"));    
+
 	    
 	    if (minhaMultiCaixaAluno.estaVazia()) 
 	    	System.out.println("Caixa Vazia");
