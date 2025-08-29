@@ -91,6 +91,20 @@ public class ListaComArray {
         size = 0;
     }
 
+    public Object set(int index, Object elem) {
+        if (index < 0 || index > size) {
+            throw new IndexOutOfBoundsException("Index=" + index + " e Size= " + size);
+            elements[index] = elem;
+        }
+
+    }
+
+    public void TrinToSize() {
+       if (size < capacity) {
+           capacity = size;
+        }
+    }
+
 }
 
 
