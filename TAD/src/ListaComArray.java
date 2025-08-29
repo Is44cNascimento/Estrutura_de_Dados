@@ -22,7 +22,15 @@ public class ListaComArray {
     }
 
     public void print(){
-
+        if (size==0){
+            System.out.println("<---Lista Vazia--->");
+        }else{
+            System.out.println("<---Inicio--->");
+            for(int i=0;i<size;i++){
+                System.out.println(elements[i]);
+                System.out.println("<---Fim--->");
+            }
+        }
     }
 
 
