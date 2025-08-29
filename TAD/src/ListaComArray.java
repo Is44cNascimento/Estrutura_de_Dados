@@ -72,15 +72,17 @@ public class ListaComArray {
     }
 
     public void add(int index,Object elem){
-        aumentarCacidadeSeNecessario();
-            if(elements[index]<0 && elements < size() - 1){
-                elements[index]= elem;
-        }else{
-                for(int i=index;i<size;i++){
-                    elements[i]=elements[i+1];
-                }
-                elements[index]=elem;
-            }
+
+         if(index<0 || index>size){
+             throw new IndexOutOfBoundsException("Index=" +index+" e Size= "+Size);
+             aumentarCacidadeSeNecessario();
+
+             for (int i = size; i > index; i--) {
+                 elements[i]=elements[i-1];
+                 element[index]=elem;
+                 size++;
+             }
+         }
     }
 }
 
