@@ -3,6 +3,8 @@ public class TADApp {
 
 	public static void main(String[] args) {
 
+        ListaComArray minhaLista = new ListaComArray();
+
 		// IntBox 
 		IntBox minhaCaixa=new IntBox();    
 		System.out.println("O número guardado na caixa é "+minhaCaixa.meDeONumero());
@@ -13,7 +15,7 @@ public class TADApp {
 		minhaOutraCaixa.guardeEsteNumero(12);    
 		System.out.println("O número guardado na caixa é "+minhaOutraCaixa.meDeONumero());  
 
-		
+		minhaLista.add();
 		
 /*
 		
